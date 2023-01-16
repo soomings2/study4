@@ -1,0 +1,106 @@
+body {
+  background-image: url(1.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.nav-area {
+  width: 800px;
+  height: 50px;
+  background: rgb(0, 0, 0);
+  text-align: center;
+  margin: 20px auto;
+  position: relative;
+  box-sizing: border-box;
+  font-family: roboto;
+  box-shadow: 0 0 2px #000;
+}
+.nav-area:before {
+  position: absolute;
+  content: "";
+  left: -25px;
+  top: 25px;
+  border-top: 25px solid transparent;
+  border-right: 25px solid #333;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid transparent;
+  z-index: -1;
+}
+.nav-area:after {
+  position: absolute;
+  content: "";
+  right: -25px;
+  top: 25px;
+  border-top: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid #333;
+  z-index: -1;
+}
+.side-one {
+  position: absolute;
+  border-top: 25px solid rgb(0, 0, 0);
+  border-right: 50px solid rgb(0, 0, 0);
+  border-bottom: 25px solid rgb(0, 0, 0);
+  border-left: 25px solid transparent;
+  top: 25px;
+  left: -50px;
+  z-index: -2;
+}
+.side-two {
+  position: absolute;
+  border-top: 25px solid rgb(0, 0, 0);
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid rgb(0, 0, 0);
+  border-left: 50px solid rgb(0, 0, 0);
+  top: 25px;
+  right: -50px;
+  z-index: -2;
+}
+.nav-area a {
+  text-decoration: none;
+  font-weight: 800;
+  color: #fff;
+  padding: 15px 30px;
+  line-height: 3.1;
+}
+.nav-area a:hover {
+  background: #262626;
+}
+.banner-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.banner-text h2 {
+  font-weight: 800;
+  font-size: 65px;
+  color: #000;
+  margin: 0;
+  line-height: 1;
+}
+.banner-text p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.banner-text button {
+  background: #000;
+  border: none;
+  color: #fff;
+  padding: 15px 40px;
+}
+.contactus {
+  padding: 25px;
+}
+.contactus a {
+  text-decoration: none;
+  color: #fff;
+}
+.contactus :hover {
+  background: #262626;
+}
